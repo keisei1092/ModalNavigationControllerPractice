@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
+	@IBOutlet var interactor: Interactor!
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+	@IBAction func handleButton(_ sender: UIButton) {
+		let sb = UIStoryboard(name: "ModalViewController", bundle: nil)
+		let nc = sb.instantiateInitialViewController() as! ModalNavigationController
+		nc.interactor = interactor
+		nc.transitioningDelegate = self
+		present(nc, animated: true, completion: nil)
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		return DismissAnimator()
 	}
 
-
+	func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
+	}
 }
-
