@@ -14,6 +14,11 @@
 		F332F40A1EE8F4A500F8B6C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F332F4081EE8F4A500F8B6C0 /* LaunchScreen.storyboard */; };
 		F332F4151EE8F4A500F8B6C0 /* transitioning_delegate_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F4141EE8F4A500F8B6C0 /* transitioning_delegate_practiceTests.swift */; };
 		F332F4201EE8F4A500F8B6C0 /* transitioning_delegate_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F41F1EE8F4A500F8B6C0 /* transitioning_delegate_practiceUITests.swift */; };
+		F332F42E1EE8F5DE00F8B6C0 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F42D1EE8F5DE00F8B6C0 /* Interactor.swift */; };
+		F332F4301EE8F66E00F8B6C0 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F42F1EE8F66E00F8B6C0 /* DismissAnimator.swift */; };
+		F332F4321EE8F70400F8B6C0 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F4311EE8F70400F8B6C0 /* ModalViewController.swift */; };
+		F332F4341EE8F70F00F8B6C0 /* ModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F332F4331EE8F70F00F8B6C0 /* ModalViewController.storyboard */; };
+		F332F4361EE8FFA200F8B6C0 /* ModalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F4351EE8FFA200F8B6C0 /* ModalNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F332F41B1EE8F4A500F8B6C0 /* transitioning-delegate-practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "transitioning-delegate-practiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F332F41F1EE8F4A500F8B6C0 /* transitioning_delegate_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transitioning_delegate_practiceUITests.swift; sourceTree = "<group>"; };
 		F332F4211EE8F4A500F8B6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F332F42D1EE8F5DE00F8B6C0 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		F332F42F1EE8F66E00F8B6C0 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		F332F4311EE8F70400F8B6C0 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		F332F4331EE8F70F00F8B6C0 /* ModalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalViewController.storyboard; sourceTree = "<group>"; };
+		F332F4351EE8FFA200F8B6C0 /* ModalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				F332F4061EE8F4A500F8B6C0 /* Assets.xcassets */,
 				F332F4081EE8F4A500F8B6C0 /* LaunchScreen.storyboard */,
 				F332F40B1EE8F4A500F8B6C0 /* Info.plist */,
+				F332F42D1EE8F5DE00F8B6C0 /* Interactor.swift */,
+				F332F42F1EE8F66E00F8B6C0 /* DismissAnimator.swift */,
+				F332F4311EE8F70400F8B6C0 /* ModalViewController.swift */,
+				F332F4331EE8F70F00F8B6C0 /* ModalViewController.storyboard */,
+				F332F4351EE8FFA200F8B6C0 /* ModalNavigationController.swift */,
 			);
 			path = "transitioning-delegate-practice";
 			sourceTree = "<group>";
@@ -236,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F332F40A1EE8F4A500F8B6C0 /* LaunchScreen.storyboard in Resources */,
+				F332F4341EE8F70F00F8B6C0 /* ModalViewController.storyboard in Resources */,
 				F332F4071EE8F4A500F8B6C0 /* Assets.xcassets in Resources */,
 				F332F4051EE8F4A500F8B6C0 /* Main.storyboard in Resources */,
 			);
@@ -262,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F332F42E1EE8F5DE00F8B6C0 /* Interactor.swift in Sources */,
+				F332F4321EE8F70400F8B6C0 /* ModalViewController.swift in Sources */,
 				F332F4021EE8F4A500F8B6C0 /* ViewController.swift in Sources */,
 				F332F4001EE8F4A500F8B6C0 /* AppDelegate.swift in Sources */,
+				F332F4301EE8F66E00F8B6C0 /* DismissAnimator.swift in Sources */,
+				F332F4361EE8FFA200F8B6C0 /* ModalNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
